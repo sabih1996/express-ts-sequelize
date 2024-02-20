@@ -22,7 +22,6 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        cd services/channel-manager
         npm install
 
     - name: Build Code
