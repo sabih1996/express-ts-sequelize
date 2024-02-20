@@ -18,10 +18,8 @@ jobs:
 
     - name: Install Dependencies
       run: |
-        cd express-ts-sequelize
         npm install
 
     - name: Build Code
       run: |
-        cd express-ts-sequelize
         npm run build
