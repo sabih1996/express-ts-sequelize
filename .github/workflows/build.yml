@@ -12,8 +12,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        with:
-          path: /home/runner/work/express-ts-sequelize/express-ts-sequelize
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
