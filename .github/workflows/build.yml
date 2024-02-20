@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "express-ts-sequelize/src/*"
+      - "express-ts-sequelize/*"
 
 jobs:
   build:
