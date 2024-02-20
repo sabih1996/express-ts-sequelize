@@ -10,13 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Debugging Step
-      run: |
-        echo "Current working directory: $(pwd)"
-        echo "Node.js version: $(node -v)"
-        echo "npm version: $(npm -v)"
-        echo "List of files: $(ls -la)"
-      
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
@@ -25,6 +18,13 @@ jobs:
       - name: Install Dependencies
         run: |
           npm install
+
+      - name: Debugging Step
+        run: |
+          echo "Current working directory: $(pwd)"
+          echo "Node.js version: $(node -v)"
+          echo "npm version: $(npm -v)"
+          echo "List of files: $(ls -la)"
 
       - name: Build Code
         run: |
