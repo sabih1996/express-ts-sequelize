@@ -24,13 +24,6 @@ jobs:
         run: |
           npm install
 
-      - name: Debugging Step
-        run: |
-          echo "Current working directory: $(pwd)"
-          echo "Node.js version: $(node -v)"
-          echo "npm version: $(npm -v)"
-          echo "List of files: $(ls -la)"
-
       - name: Build Code
         run: |
           npm run build
