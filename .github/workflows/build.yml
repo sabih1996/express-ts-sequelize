@@ -8,18 +8,17 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 14
+      - name: Install Dependencies
+        run: |
+          npm install
 
-    - name: Install Dependencies
-      run: |
-        npm install
-
-    - name: Build Code
-      run: |
-        npm run build
+      - name: Build Code
+        run: |
+          npm run build
