@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
+//DB
 const sequelize = new Sequelize(`${process.env.DB_URL}`, {
   models: [User],
 });
