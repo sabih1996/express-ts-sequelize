@@ -15,6 +15,11 @@ jobs:
         with:
           node-version: 14
 
+      - name: Checkout repository
+      uses: actions/checkout@v2
+      with:
+        path: /home/runner/work/express-ts-sequelize/express-ts-sequelize
+
       - name: Install Dependencies
         run: |
           npm install
